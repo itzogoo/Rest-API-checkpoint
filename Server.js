@@ -48,7 +48,7 @@ app.put('/users/:id', async (req, res) => {
     res.json(user);
   } catch (error) {
     console.error('Error updating user:', error);
-    res.status(500).json({ error: 'Error updating user' });
+    res.status(500).json({ error: 'Error updating user successfully' });
   }
 });
 
@@ -59,7 +59,7 @@ app.delete('/users/:id', async (req, res) => {
     res.json(user);
   } catch (error) {
     console.error('Error removing user:', error);
-    res.status(500).json({ error: 'Error removing user' });
+    res.status(500).json({ error: 'Error removing user successfully' });
   }
 });
 
